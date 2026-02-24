@@ -1,28 +1,84 @@
-/* ===== БАЗА ===== */
+:root {
+  --max-width: 1200px;
+  --gap : 20px;
+  --pad : 20px;
+  --bg : #262627;
+  --panel : #171a21;
+  --text : #e8e8ea;
+  --muted : #292828;
+  --border : #2a2d33;
+}
 
-* {
-  box-sizing: border-box;
+.header {
+  background: var(--panel);
+  padding: var(--pad);
+  border-bottom: 1px solid var(--border);
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-}
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background: var(--bg);
+  color: var(--text);}
 
 /* ===== LAYOUT (две колонки) ===== */
-
-.layout {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 20px;
-  padding: 20px;
+.test{
+  display: flex;
+  justify-content: flex-start;
 }
+.layout {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: var(--pad);
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: var(--gap);
+    align-items: start;
+}
+
+.nav {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.nav__title {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: grid;
+    gap: 8px;
+}
+
+.nav__link {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
+    border: 1px solid transparent;
+}
+
+.nav__link:hover {
+    background: #943b63;
+    border-color: #a29f30;
+}
+
 
 /* Левая колонка */
 .sidebar {
-  background: #f4f4f4;
-  padding: 15px;
+position: sticky;
+top: var(--pad);
+align-self: start;
+margin-left: 21px;
+
 }
 
 /* Правая колонка */
@@ -30,10 +86,18 @@ body {
   padding: 15px;
 }
 
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
 /* ===== АДАПТИВ ===== */
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .layout {
     grid-template-columns: 1fr;
+    sidebar {
+      position: static;
+    }
   }
 }
