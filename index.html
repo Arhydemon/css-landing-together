@@ -1,84 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wiki-гид по CSS</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      background: #f5f5f5;
-      color: #222;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 16px;
-    }
-
-    header {
-      background: #ffffff;
-      padding: 16px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    main {
-      padding: 16px 0;
-    }
-
-    footer {
-      background: #ffffff;
-      padding: 16px;
-      border-top: 1px solid #ddd;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 16px;
-      background: #222;
-      color: white;
-      text-decoration: none;
-    }
-
-    .card {
-      background: white;
-      padding: 16px;
-      border: 1px solid #ddd;
-      margin-bottom: 16px;
-    }
-  </style>
+  <!-- Подключение CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<header>
-  <div class="container">
-    <h1>Wiki-гид по CSS</h1>
+  <!-- ===== HEADER (по желанию) ===== -->
+  <header class="header">
+    <h1 class="page-title">Заголовок страницы</h1>
+  </header>
+
+  <!-- ===== ОСНОВНОЙ КОНТЕЙНЕР ===== -->
+  <div class="layout">
+    <!-- Левая колонка (если нужна навигация) -->
+    <aside class="sidebar">
+      <nav class="nav"
+      <h2 class="nav__title">CSS Свойства</h2>
+      <u1 class="nav__list">
+        <li><a class="nav__link" href="#display">display</a></li>
+        <li><a class="nav__link" href="#position">position</a></li>
+        <li><a class="nav__link" href="#flex">flex</a></li>
+        <li><a class="nav__link" href="#grid">grid</a></li>
+        <li><a class="nav__link" href="#box-model">box-model</a></li>
+      </u1>
+    </nav>
+    </aside>
+
+    <!-- Правая колонка / основной контент -->
+    <main class="content">
+      <!-- Дима тут тебя нужно добавить какие то секции братик-->
+      <!-- Секции / карточки / галерея -->
+    </main>
+
   </div>
-</header>
 
-<main>
-  <div class="container">
-
-    <div class="card">
-      Контент
-    </div>
-
-    <a href="#" class="btn">Кнопка</a>
-
-  </div>
-</main>
-
-<footer>
-  <div class="container">
-    Подвал
-  </div>
-</footer>
+  <!-- ===== FOOTER (по желанию) ===== -->
+  <footer class="footer">
+    <p>© 2025</p>
+  </footer>
 
 </body>
 </html>
