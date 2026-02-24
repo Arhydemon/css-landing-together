@@ -1,28 +1,44 @@
-/* ===== БАЗА ===== */
-
-* {
-  box-sizing: border-box;
+:root {
+  --max-width: 1200px;
+  --gap : 20px;
+  --pad : 20px;
+  --bg : #262627;
+  --panel : #171a21;
+  --text : #e8e8ea;
+  --muted : #292828;
+  --border : #2a2d33;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-}
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background: var(--bg);
+  color: var(--text);}
 
 /* ===== LAYOUT (две колонки) ===== */
 
 .layout {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 20px;
-  padding: 20px;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: var(--pad);
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: var(--gap);
+    align-items: start;
 }
 
+.nav {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+}
 /* Левая колонка */
 .sidebar {
-  background: #f4f4f4;
-  padding: 15px;
+position: sticky;
+top: var(--pad);
+align-self: start;
+
 }
 
 /* Правая колонка */
