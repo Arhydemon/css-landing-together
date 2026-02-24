@@ -22,7 +22,10 @@ body {
   color: var(--text);}
 
 /* ===== LAYOUT (две колонки) ===== */
-
+.test{
+  display: flex;
+  justify-content: flex-start;
+}
 .layout {
     max-width: var(--max-width);
     margin: auto;
@@ -48,7 +51,7 @@ body {
 .nav__list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     display: grid;
     gap: 8px;
 }
@@ -74,12 +77,18 @@ body {
 position: sticky;
 top: var(--pad);
 align-self: start;
+margin-left: 21px;
 
 }
 
 /* Правая колонка */
 .content {
   padding: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
 }
 
 /* ===== АДАПТИВ ===== */
