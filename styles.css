@@ -1,0 +1,39 @@
+/* ===== БАЗА ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* ===== LAYOUT (две колонки) ===== */
+
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Левая колонка */
+.sidebar {
+  background: #f4f4f4;
+  padding: 15px;
+}
+
+/* Правая колонка */
+.content {
+  padding: 15px;
+}
+
+/* ===== АДАПТИВ ===== */
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
