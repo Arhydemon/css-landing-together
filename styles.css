@@ -2,11 +2,13 @@
   --max-width: 1200px;
   --gap : 20px;
   --pad : 20px;
-  --bg : #262627;
-  --panel : #171a21;
-  --text : #e8e8ea;
-  --muted : #292828;
-  --border : #2a2d33;
+  --bg : #0f172a;
+  --panel : #1e293b;
+  --panel-2: #334155; 
+  --text : #f1f5f9;
+  --muted : #94a3b8;
+  --border : #334155;
+  --accent: #3b82f6;
 }
 
 .header {
@@ -67,8 +69,8 @@ body {
 }
 
 .nav__link:hover {
-    background: #943b63;
-    border-color: #a29f30;
+    background: var(--panel-2);
+    border-color: var(--accent);
 }
 
 
@@ -78,6 +80,7 @@ position: sticky;
 top: var(--pad);
 align-self: start;
 margin-left: 21px;
+margin-top: 21px;
 
 }
 
